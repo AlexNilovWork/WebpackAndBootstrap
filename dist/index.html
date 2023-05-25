@@ -1,1 +1,219 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Webpack and Bootstarp</title><script defer="defer" src="958.7f615893bfcbac4afad4.js"></script><script defer="defer" src="main.eb1789877fefc06ae236.js"></script><link href="main.2b76ac3207be8e340fd2.css" rel="stylesheet"></head><body><div class="container"><h1>Webpack and Bootstarp Set</h1><div id="example"></div></div></body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Bootstrap Color Palette</title><script defer="defer" src="958.ad53152f16f9f4fe6836.js"></script><script defer="defer" src="main.732e02e543c24188726d.js"></script><link href="main.2b76ac3207be8e340fd2.css" rel="stylesheet"></head><body><div class="container-fluid d-flex flex-column align-items-center"><div class="container-fluid my-5"><h1>Bootstrap Color Palette</h1></div><div class="container-fluid row p-0" style="min-height: 450px;"><div class="col-sm-12 col-md-6 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example1" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp1-div-tab" data-bs-toggle="tab" data-bs-target="#exp1-div" type="button" role="tab" aria-controls="exp1-div" aria-selected="true">Example #1</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp1-code-tab" data-bs-toggle="tab" data-bs-target="#exp1-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp1-content"><div class="tab-pane pt-2 fade show active" id="exp1-div" role="tabpanel" aria-labelledby="exp1-div-tab"><h4 id="changed1" class="my-4 mt-0 p-5 shadow">Example #1</h4><div class=""><p>type : var</p><p>return: <span class="return1">string</span></p><div id="example1"></div></div></div><div class="demo-code tab-pane fade p-2" id="exp1-code" role="tabpanel" aria-labelledby="exp1-code-tab"><p>DOM</p><pre>&lt;h4 id="changed1"&gt;Example #1 &lt;h4&gt;<br>&lt;div id="example1"&gt;&lt;div&gt;</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>import * as $ from 'jquery';<br>import * as bootstrap from 'bootstrap';<br>import BootstrapColorPalette from 'color-palette-for-users';
+              <br>const myPal1 = new BootstrapColorPalette({<br> "selector" : "#example1",<br> "func": ChangeVar,<br> "type": "<span class="text-danger">var</span>"<br>});
+              <br>function ChangeVar(col){<br> $('#changed1').css({<br>  'background-color' : 'var('+col+')'<br> });<br> $('.return1').text(col);<br>}
+              </pre></div></div></div><div class="col-sm-12 col-md-6 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example2" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp2-div-tab" data-bs-toggle="tab" data-bs-target="#exp2-div" type="button" role="tab" aria-controls="exp2-div" aria-selected="true">Example #2</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp2-code-tab" data-bs-toggle="tab" data-bs-target="#exp2-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp2-content"><div class="tab-pane pt-2 fade show active" id="exp2-div" role="tabpanel" aria-labelledby="exp2-div-tab"><h4 id="changed2" class="my-4 mt-0 p-5 shadow">Example #2</h4><div class=""><p>type : rgb</p><p>return: <span class="return2">string</span></p><div id="example2"></div></div></div><div class="demo-code tab-pane fade" id="exp2-code" role="tabpanel" aria-labelledby="exp2-code-tab"><p>DOM</p><pre>&lt;h4 id="changed2"&gt;Example #2 &lt;h4&gt;<br>&lt;div id="example2"&gt;&lt;div&gt;</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>import * as $ from 'jquery';<br>import * as bootstrap from 'bootstrap';<br>import BootstrapColorPalette from 'color-palette-for-users';
+              <br>const myPal2 = new BootstrapColorPalette({<br> "selector" : "#example2",<br> "func": ChangeRGB,<br> "type": "<span class="text-danger">rgb</span>"<br>});
+              <br>function ChangeRGB(col){<br> $('#changed2').css({<br>  'background-color' : 'rgb(var('+col+'))'<br> });<br> $('.return2').text(col);<br>}
+              </pre></div></div></div><div class="col-sm-12 col-md-6 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example3" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp3-div-tab" data-bs-toggle="tab" data-bs-target="#exp3-div" type="button" role="tab" aria-controls="exp3-div" aria-selected="true">Example #3</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp3-code-tab" data-bs-toggle="tab" data-bs-target="#exp3-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp3-content"><div class="tab-pane pt-2 fade show active" id="exp3-div" role="tabpanel" aria-labelledby="exp3-div-tab"><h4 id="changed3" class="my-4 mt-0 p-5 shadow">Example #3</h4><div><p>type : bg</p><p>return: <span class="return3">string</span></p><div id="example3"></div></div></div><div class="demo-code tab-pane fade" id="exp3-code" role="tabpanel" aria-labelledby="exp3-code-tab"><p>DOM</p><pre>&lt;h4 id="changed3"&gt;Example #3 &lt;h4&gt;<br>&lt;div id="example3"&gt;&lt;div&gt;</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>import * as $ from 'jquery';<br>import * as bootstrap from 'bootstrap';<br>import BootstrapColorPalette from 'color-palette-for-users';
+              <br>const myPal3 = new BootstrapColorPalette({<br> "selector" : "#example3",<br> "func": ChangeBg,<br> "type": "<span class="text-danger">bg</span>"<br>});
+<br>function ChangeBg(col){
+  var elClass;
+  if ($('#changed3').attr('class')){
+    elClass = $('#changed3').attr('class').split(' ');
+    var arrCol = [
+      "bg-primary",
+      "bg-secondary",
+      "bg-success",
+      "bg-danger",
+      "bg-warning",
+      "bg-info",
+      "bg-light",
+      "bg-dark",
+      "bg-body-secondary",
+      "bg-body-tertiary",
+      "bg-body","bg-black",
+      "bg-white",
+      "bg-transparent"
+    ];
+    var bgCl;
+    for (let i = 0; i &lt elClass.length; i++) {
+      if (arrCol.indexOf(elClass[i]) !== -1){
+        bgCl = elClass[i];
+        break;
+      }
+    }
+    if (bgCl) $('#changed3').removeClass(bgCl);
+  }
+  $('#changed3').addClass(col);
+  $('.return3').text(col);
+}
+              </pre></div></div></div></div><div class="container-fluid row p-0" style="min-height: 450px;"><div class="col-sm-12 col-md-6 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example4" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp4-div-tab" data-bs-toggle="tab" data-bs-target="#exp4-div" type="button" role="tab" aria-controls="exp4-div" aria-selected="true">Example #4</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp4-code-tab" data-bs-toggle="tab" data-bs-target="#exp4-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp4-content"><div class="tab-pane pt-2 fade show active" id="exp4-div" role="tabpanel" aria-labelledby="exp4-div-tab"><div class="my-4 p-3 shadow"><h4>Example #4</h4><p id="changed4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div><div class=""><p>type : text</p><p>return: <span class="return4">string</span></p><div id="example4"></div></div></div><div class="demo-code tab-pane fade" id="exp4-code" role="tabpanel" aria-labelledby="exp4-code-tab"><p>DOM</p><pre>&lt;h4&gt;Example #4&lt;/h4&gt;
+&lt;p id="changed4"&gt;
+  Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+&lt;/p&gt;
+</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>import * as $ from 'jquery';
+import * as bootstrap from 'bootstrap';
+import BootstrapColorPalette from 'color-palette-for-users';<br>
+const myPal4 = new BootstrapColorPalette({
+  "selector" : "#example4",
+  "func": ChangeText,
+  "type": "&lt;span class="text-danger"&gt;text&lt;/span&gt;"
+});<br>
+function ChangeText(col){
+  var elClass;
+  if ($('#changed4').attr('class')){
+    elClass = $('#changed4').attr('class').split(' ');
+    var arrCol = [
+      "text-primary",
+      "text-secondary",
+      "text-success",
+      "text-danger",
+      "text-warning",
+      "text-info",
+      "text-light",
+      "text-dark",
+      "text-body",
+      "text-muted",
+      "text-white",
+      "text-black"
+    ];
+    var bgCl;
+    for (let i = 0; i &lt; elClass.length; i++) {
+      if (arrCol.indexOf(elClass[i]) !== -1){
+         bgCl = elClass[i];
+         break;
+      }
+    }
+    if (bgCl) $('#changed4').removeClass(bgCl);
+  }
+  $('#changed4').addClass(col);
+  $('.return4').text(col);
+}
+</pre></div></div></div><div class="col-sm-12 col-md-6 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example5" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp5-div-tab" data-bs-toggle="tab" data-bs-target="#exp5-div" type="button" role="tab" aria-controls="exp5-div" aria-selected="true">Example #5</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp5-code-tab" data-bs-toggle="tab" data-bs-target="#exp5-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp5-content"><div class="tab-pane pt-2 fade show active" id="exp5-div" role="tabpanel" aria-labelledby="exp5-div-tab"><div class="my-4 p-3 shadow"><h4 class="mb-3">Example #5</h4><button id="changed5" class="btn btn-dark w-100" type="button" name="button">Button</button></div><div class=""><p>type : btn</p><p>return: <span class="return5">string</span></p><div id="example5"></div></div></div><div class="demo-code tab-pane fade" id="exp5-code" role="tabpanel" aria-labelledby="exp5-code-tab"><p>DOM</p><pre>
+&lt;h4 class="mb-3"&gt;Example #5&lt;/h4&gt;
+&lt;button id="changed5" class="btn btn-dark w-100" type="button" name="button"&gt;Button&lt;/button&gt;
+</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>
+import * as $ from 'jquery';
+import * as bootstrap from 'bootstrap';
+import BootstrapColorPalette from 'color-palette-for-users';<br>
+const myPal5 = new BootstrapColorPalette({
+  "selector" : "#example5",
+  "func": ChangeBtn,
+  "type": "&lt;span class="text-danger"&gt;btn&lt;span&gt;"
+});<br>
+function ChangeBtn(col){
+  var elClass;
+    if ($('#changed5').attr('class')){
+    elClass = $('#changed5').attr('class').split(' ');
+    var arrCol = [
+      "btn-primary",
+      "btn-secondary",
+      "btn-success",
+      "btn-danger",
+      "btn-warning",
+      "btn-info",
+      "btn-light",
+      "btn-dark",
+      "btn-link",
+      "btn-outline-primary",
+      "btn-outline-secondary",
+      "btn-outline-success",
+      "btn-outline-danger",
+      "btn-outline-warning",
+      "btn-outline-info",
+      "btn-outline-light",
+      "btn-outline-dark"
+    ];
+    var bgCl;
+    for (let i = 0; i &lt; elClass.length; i++) {
+      if (arrCol.indexOf(elClass[i]) !== -1){
+         bgCl = elClass[i];
+         break;
+      }
+    }
+    if (bgCl) $('#changed5').removeClass(bgCl);
+  }
+  $('#changed5').addClass(col);
+  $('.return5').text(col);
+}
+</pre></div></div></div><div class="col-sm-12 col-md-6 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example6" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp6-div-tab" data-bs-toggle="tab" data-bs-target="#exp6-div" type="button" role="tab" aria-controls="exp6-div" aria-selected="true">Example #6</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp5-code-tab" data-bs-toggle="tab" data-bs-target="#exp6-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp6-content"><div class="tab-pane pt-2 fade show active" id="exp6-div" role="tabpanel" aria-labelledby="exp6-div-tab"><div id="changed6" class="my-4 p-3 border border-2 shadow"><h4 class="mb-3">Example #6</h4></div><div class=""><p>type : border</p><p>return: <span class="return6">string</span></p><div id="example6"></div></div></div><div class="demo-code tab-pane fade" id="exp6-code" role="tabpanel" aria-labelledby="exp6-code-tab"><p>DOM</p><pre>&lt;div id="changed6" class="my-4 p-3 border border-2 shadow"&gt;
+  &lt;h4 class="mb-3">Example #6&lt;/h4&gt;
+&lt;/div&gt;</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>
+import * as $ from 'jquery';
+import * as bootstrap from 'bootstrap';
+import BootstrapColorPalette from 'color-palette-for-users';<br>
+const myPal6 = new BootstrapColorPalette({
+  "selector" : "#example6",
+  "func": ChangeBorder,
+  "type": "&lt;span class="text-danger"&gt;border&lt;/span&gt;"
+});<br>
+function ChangeBorder(col){
+  var elClass;
+    if ($('#changed6').attr('class')){
+    elClass = $('#changed6').attr('class').split(' ');
+    var arrCol = [
+      "border-primary",
+      "border-secondary",
+      "border-success",
+      "border-danger",
+      "border-warning",
+      "border-info",
+      "border-light",
+      "border-dark"
+    ];
+    var bgCl;
+    for (let i = 0; i &lt; elClass.length; i++) {
+      if (arrCol.indexOf(elClass[i]) !== -1){
+         bgCl = elClass[i];
+         break;
+      }
+    }
+    if (bgCl) $('#changed6').removeClass(bgCl);
+  }
+  $('#changed6').addClass(col);
+  $('.return6').text(col);
+}
+</pre></div></div></div></div><div class="container-fluid row p-0" style="min-height: 450px;"><div class="col-sm-12 col-md-5 col-lg-4 my-3"><ul class="nav nav-tabs" id="bcp-example7" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp7-div-tab" data-bs-toggle="tab" data-bs-target="#exp7-div" type="button" role="tab" aria-controls="exp7-div" aria-selected="true">Example #7</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp7-code-tab" data-bs-toggle="tab" data-bs-target="#exp7-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp7-content"><div class="tab-pane pt-2 fade show active" id="exp7-div" role="tabpanel" aria-labelledby="exp7-div-tab"><h4 id="changed7" class="my-4 p-5 shadow">Example #7</h4><p>type : rgba</p><p>return:</p><pre class="return7 ms-3" style="min-height: 84px;"></pre><div id="example7"></div></div><div class="demo-code tab-pane fade" id="exp7-code" role="tabpanel" aria-labelledby="exp7-code-tab"><p>DOM</p><pre>&lt;h4 id="changed7" class="my-4 p-5 shadow"&gt;Example #7&lt;/h4&gt;</pre><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>
+import * as $ from 'jquery';
+import * as bootstrap from 'bootstrap';
+import BootstrapColorPalette from 'color-palette-for-users';<br>
+const myPal7 = new BootstrapColorPalette({
+  "selector" : "#example7",
+  "func": ChangeRGBA,
+  "type": "&lt;span class="text-danger"&gt;rgba&lt;/span&gt;"
+});<br>
+function ChangeRGBA(col){
+  $('.return7').text(JSON.stringify(col,null,2));
+  $('#changed7').css({"background" : `rgba(var(${col.color}),${col.opacity})`});
+}
+</pre></div></div></div><div class="col-sm-12 col-md-7 col-lg-8 my-3"><ul class="nav nav-tabs" id="bcp-example8" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="exp8-div-tab" data-bs-toggle="tab" data-bs-target="#exp8-div" type="button" role="tab" aria-controls="exp8-div" aria-selected="true">Example #8</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="exp8-code-tab" data-bs-toggle="tab" data-bs-target="#exp8-code" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button></li></ul><div class="tab-content border border-top-0 p-2 pt-0" id="bcp-exp8-content"><div class="tab-pane pt-2 fade show active" id="exp8-div" role="tabpanel" aria-labelledby="exp8-div-tab"><h4>Example #8</h4><p>type : main</p><div id="example8"></div></div><div class="demo-code tab-pane fade" id="exp8-code" role="tabpanel" aria-labelledby="exp8-code-tab"><p>CSS</p><pre>@import "bootstrap/scss/bootstrap";</pre><p>JS</p><pre>
+import * as $ from 'jquery';
+import * as bootstrap from 'bootstrap';
+import BootstrapColorPalette from 'color-palette-for-users';<br>
+const myPal8 = new BootstrapColorPalette({
+  "selector" : "#example8",
+  "type": "&lt;span class="text-danger"&gt;main&lt;/span&gt;",
+  "func": ChangeMain
+});<br>
+//Retur an array of the form:<br>
+[
+  {
+    "name": "Body",
+    "color": "--bs-body-bg",
+    "value": "#ffffff",
+    "type": "hex"
+  },
+  {
+    "name": "Body RGB",
+    "color": "--bs-body-bg-rgb",
+    "value": "255,255,255",
+    "type": "rgb"
+  }
+  ...
+]<br>
+function ChangeMain(arr){
+  for (var i = 0; i &lt; arr.length; i++) {
+    getClassByName(':root').style.setProperty(arr[i].color, arr[i].value);
+  }
+}<br>
+function getClassByName(className) {
+  for (var ssNum in document.styleSheets)
+    for (var ruleNum in document.styleSheets[ssNum].cssRules)
+      if (document.styleSheets[ssNum].cssRules[ruleNum].selectorText)
+        if (document.styleSheets[ssNum].cssRules[ruleNum].selectorText.indexOf(className) == 0)
+          return document.styleSheets[ssNum].cssRules[ruleNum];
+}
+</pre></div></div></div></div></div></body></html>
