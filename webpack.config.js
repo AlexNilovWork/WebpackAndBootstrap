@@ -1,8 +1,8 @@
-const path = require('path')
-const autoprefixer = require('autoprefixer')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const autoprefixer = require('autoprefixer');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -83,4 +83,4 @@ module.exports = {
       }
     ]
   }
-}
+};
